@@ -1,0 +1,18 @@
+-- Making the database and Tables with auto assign ID
+CREATE DATABASE Salary;
+CREATE TABLE Salary (
+    Personid int(10) NOT NULL AUTO_INCREMENT,
+    FirstName VARCHAR(300) NOT NULL,
+    Lastname VARCHAR(300) NOT NULL,
+    JobTitle VARCHAR(300) NOT NULL,
+    Location VARCHAR(300) NOT NULL,
+    Salary INT NOT NULL,
+	PRIMARY KEY (Personid)
+);
+-- Adding Data
+INSERT INTO Salary (Firstname, Lastname, Jobtitle, Location, Salary)
+    Values ('Dave', 'Hall', 'Managing Director', 'HQ-UK', '95,000');
+-- Value for salary only shows as 95 as "," put in by mistake correction
+UPDATE Salary
+SET Salary = "95000"
+WHERE Personid = 1;
