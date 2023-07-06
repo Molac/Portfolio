@@ -6,4 +6,4 @@ CREATE TABLE Holidays (
 	holidaysremaining int(2)
 );
 INSERT into holidays (PersonID,	Holidaysallocation, holidaysused)
-VALUES (1, 30, 5);
+VALUES (1, 30, -5);
