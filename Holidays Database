@@ -5,3 +5,5 @@ CREATE TABLE Holidays (
     holidaysused int(2),
 	holidaysremaining int(2)
 );
+INSERT into holidays (PersonID,	Holidaysallocation, holidaysused)
+VALUES (1, 30, 5);
