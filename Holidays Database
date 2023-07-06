@@ -1,0 +1,7 @@
+-- Create table for holidays
+CREATE TABLE Holidays (
+    PersonID int(10) NOT NULL PRIMARY KEY,
+    Holidaysallocation int(2) NOT NULL,
+    holidaysused int(2),
+	holidaysremaining int(2)
+);
